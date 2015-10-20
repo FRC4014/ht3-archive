@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: HT^3 Archive Page
-Plugin URI:  http://tophattechnicians.com/archive
+Plugin URI:  https://github.com/FRC4014/ht3-archive
 Description: Replaces a page called "Archive" with a nicely designed grid archive.
 Version:     1.0
 Author:      Lucas LeVieux
