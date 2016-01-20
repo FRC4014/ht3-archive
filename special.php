@@ -17,5 +17,19 @@ function technicians_special($the_content) {
 	else return $the_content;
 	}
 	
-add_filter( 'the_content', 'technicians_special' );
+	
+function add_calendar_scripts() {
+	?>
+	<link href='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.css' rel='stylesheet' />
+	<link href='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/lib/moment.min.js'></script>
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/lib/jquery.min.js'></script>
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.min.js'></script>
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/gcal.js'></script>
+	<?php
+	}
+
+	
+add_action('wp_head', 'add_calendar_scripts');
+add_filter('the_content', 'technicians_special');
 ?>
