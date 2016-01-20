@@ -11,7 +11,10 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 function technicians_special($the_content) {
 	if (get_the_title() == "Archive")
-		return file_get_contents("archive.php");
+		return file_get_contents(ABSPATH . "wp-content/plugins/ht3-special/archive.php");
+	else if (get_the_title() == "Calendar")
+		return file_get_contents(ABSPATH . "wp-content/plugins/ht3-special/calendar.php");
+	else return $the_content;
 	}
 	
 add_filter( 'the_content', 'technicians_special' );
