@@ -1,3 +1,14 @@
+<!--
+requires the following inside of <head>:
+
+<link href='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.css' rel='stylesheet' />
+	<link href='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/lib/moment.min.js'></script>
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/lib/jquery.min.js'></script>
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.min.js'></script>
+	<script src='/wp-content/plugins/ht3-special/fullcalendar/gcal.js'></script>
+-->
+
 <script type='text/javascript'>
 $(document).ready(function() {
 	$('#calendar').fullCalendar({
