@@ -14,7 +14,7 @@ $(document).ready(function() {
 			}
 		},
 		header: {
-			left: 'prev,next today',
+			left: 'prev,next',
 			center: 'title',
 			right: 'addGCal'
 		},
@@ -39,6 +39,10 @@ $(document).ready(function() {
 #calendar table{
 	margin: 0;
 }
+#calendar button{
+	font: inherit;
+	font-weight: bold;
+}
 #calendar td.fc-event-container a{
 	height: 80px;
 	background-color: black;
@@ -56,7 +60,7 @@ div.fc-content span.fc-time{
 	white-space: normal;
 	display: block;
 	font-weight: normal;
-	font-size: 10pt;
+	font-size: 8pt;
 }
 
 div.fc-content span.fc-title{
