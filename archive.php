@@ -54,7 +54,7 @@
 	margin: auto;
 	padding-top: 15px;
 	display: block;
-	border: none; !
+	border: none !important;
 	}
 .archive-image {
 	height: 140px;
