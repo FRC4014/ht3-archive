@@ -1,20 +1,3 @@
-<?php
-/*
-Plugin Name: HT^3 Archive Page
-Plugin URI:  https://github.com/FRC4014/ht3-archive
-Description: Replaces a page called "Archive" with a nicely designed grid archive.
-Version:     1.0
-Author:      Lucas LeVieux
-Author URI:  http://lucaslevieux.com
-License:     GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-*/
-
-function technicians_archive($the_content) {
-	if (get_the_title() == "Archive"){
-	
-$the_content = <<<'EOD'
-
 <style>
 .archive-container {
 	clear: both;
@@ -137,12 +120,3 @@ $the_content = <<<'EOD'
         </div>
     </a>
 </div>
-
-EOD;
-
-		}
-  	return $the_content;
-	}
-	
-add_filter( 'the_content', 'technicians_archive' );
-?>
