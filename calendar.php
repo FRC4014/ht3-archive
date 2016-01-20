@@ -53,6 +53,7 @@ $(document).ready(function() {
 #calendar button{
 	font: inherit;
 	font-weight: bold;
+	background: white;
 }
 #calendar td.fc-event-container a{
 	height: 80px;
