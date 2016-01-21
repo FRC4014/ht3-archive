@@ -53,50 +53,54 @@ span.fc-time, span.fc-title, div.fc-content{
 	overflow: visible;
 	white-space: normal;
 }
-@media screen and (max-width: 950px) { /*mobile-specific rules*/
+#calendar {
+	max-width: 900px;
+	margin: 0 auto;
+}
+#calendar button{
+	font: inherit;
+	font-weight: bold;
+	background: white;
+	border: black 1px solid;
+}
+#calendar td.fc-event-container a{
+	background-color: black;
+	border: none;
+}
+#calendar th.fc-day-header{
+	color: black;
+}
+.fc-view{
+	border-radius: 5px;
+	border: black 3px solid;
+}
+div.fc-content{
+	padding: 5px;
+	text-align: center;
+}
+div.fc-content span.fc-time{
+	display: block;
+	font-weight: normal;
+	font-size: 8pt;
+}
 
+div.fc-content span.fc-title{
+	display: block;
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+.fc td.fc-today.fc-state-highlight{
+	background: lightgrey;
+}
+
+@media screen and (max-width: 850px) { /*mobile-specific rules*/
+	span.fc-time{
+		display: none !important;
+	}
 }
 @media screen and (min-width: 950px) { /*desktop-specific rules*/
-	#calendar {
-		max-width: 900px;
-		margin: 0 auto;
-	}
-	#calendar button{
-		font: inherit;
-		font-weight: bold;
-		background: white;
-		border: black 1px solid;
-	}
-	#calendar td.fc-event-container a{
-		background-color: black;
-		border: none;
-	}
-	#calendar th.fc-day-header{
-		color: black;
-	}
-	.fc-view{
-		border-radius: 5px;
-		border: black 3px solid;
-	}
-	div.fc-content{
-		padding: 5px;
-		text-align: center;
-	}
-	div.fc-content span.fc-time{
-		display: block;
-		font-weight: normal;
-		font-size: 8pt;
-	}
-
-	div.fc-content span.fc-title{
-		display: block;
-		font-weight: bold;
-		font-size: 11pt;
-	}
 	
-	.fc td.fc-today.fc-state-highlight{
-		background: lightgrey;
-	}
 }
 </style>
 
