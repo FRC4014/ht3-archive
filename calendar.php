@@ -54,11 +54,19 @@ $(document).ready(function() {
 	font: inherit;
 	font-weight: bold;
 	background: white;
+	border: black 1px solid;
 }
 #calendar td.fc-event-container a{
 	height: 80px;
 	background-color: black;
 	border: none;
+}
+#calendar th.fc-day-header{
+	color: black;
+}
+.fc-view{
+	border-radius: 5px;
+	border: black 3px solid;
 }
 div.fc-content{
 	overflow: visible;
