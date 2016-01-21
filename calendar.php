@@ -30,12 +30,14 @@ $(document).ready(function() {
 			right: 'addGCal'
 		},
 		displayEventEnd: true,
-		timeFormat: 'h:mma'
+		timeFormat: 'h:mma',
+		eventColor: 'black'
 	});
 });
 
 </script>
 <style>
+	
 #loading {
 	display: none;
 	position: absolute;
@@ -43,54 +45,55 @@ $(document).ready(function() {
 	right: 10px;
 }
 
-#calendar {
-	max-width: 900px;
-	margin: 0 auto;
-}
 #calendar table{
 	margin: 0;
 }
-#calendar button{
-	font: inherit;
-	font-weight: bold;
-	background: white;
-	border: black 1px solid;
-}
-#calendar td.fc-event-container a{
-	height: 80px;
-	background-color: black;
-	border: none;
-}
-#calendar th.fc-day-header{
-	color: black;
-}
-.fc-view{
-	border-radius: 5px;
-	border: black 3px solid;
-}
-div.fc-content{
-	overflow: visible;
-	white-space: normal;
-	padding: 5px;
-	text-align: center;
+@media screen and (min-width: 950px) { /*desktop-specific rules*/
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	#calendar button{
+		font: inherit;
+		font-weight: bold;
+		background: white;
+		border: black 1px solid;
+	}
+	#calendar td.fc-event-container a{
+		height: 80px;
+		background-color: black;
+		border: none;
+	}
+	#calendar th.fc-day-header{
+		color: black;
+	}
+	.fc-view{
+		border-radius: 5px;
+		border: black 3px solid;
+	}
+	div.fc-content{
+		overflow: visible;
+		white-space: normal;
+		padding: 5px;
+		text-align: center;
+	}
+	div.fc-content span.fc-time{
+		overflow: visible;
+		white-space: normal;
+		display: block;
+		font-weight: normal;
+		font-size: 8pt;
+	}
 
+	div.fc-content span.fc-title{
+		overflow: visible;
+		white-space: normal;
+		margin-top: 10px;
+		display: block;
+		font-weight: bold;
+		font-size: 12pt;
+	}		
 }
-div.fc-content span.fc-time{
-	overflow: visible;
-	white-space: normal;
-	display: block;
-	font-weight: normal;
-	font-size: 8pt;
-}
-
-div.fc-content span.fc-title{
-	overflow: visible;
-	white-space: normal;
-	margin-top: 10px;
-	display: block;
-	font-weight: bold;
-	font-size: 12pt;
-}		
 </style>
 
 <div id='loading'>loading...</div>
