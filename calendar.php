@@ -68,7 +68,6 @@ span.fc-time, span.fc-title, div.fc-content{
 		border: black 1px solid;
 	}
 	#calendar td.fc-event-container a{
-		/*height: 80px;*/
 		background-color: black;
 		border: none;
 	}
@@ -90,11 +89,14 @@ span.fc-time, span.fc-title, div.fc-content{
 	}
 
 	div.fc-content span.fc-title{
-		/*margin-top: 5px;*/
 		display: block;
 		font-weight: bold;
 		font-size: 11pt;
-	}		
+	}
+	
+	.fc td.fc-today.fc-state-highlight{
+		background: lightgrey;
+	}
 }
 </style>
 
