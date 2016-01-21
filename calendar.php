@@ -99,8 +99,10 @@ div.fc-content span.fc-title{
 		display: none !important;
 	}
 }
-@media screen and (min-width: 950px) { /*desktop-specific rules*/
-	
+@media screen and (max-width: 700px) { /*desktop-specific rules*/
+	div.fc-content span.fc-title{
+		font-size: 9pt;
+	}
 }
 </style>
 
