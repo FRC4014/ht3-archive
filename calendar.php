@@ -48,6 +48,14 @@ $(document).ready(function() {
 #calendar table{
 	margin: 0;
 }
+
+span.fc-time, span.fc-title, div.fc-content{
+	overflow: visible;
+	white-space: normal;
+}
+@media screen and (max-width: 950px) { /*mobile-specific rules*/
+
+}
 @media screen and (min-width: 950px) { /*desktop-specific rules*/
 	#calendar {
 		max-width: 900px;
@@ -60,7 +68,7 @@ $(document).ready(function() {
 		border: black 1px solid;
 	}
 	#calendar td.fc-event-container a{
-		height: 80px;
+		/*height: 80px;*/
 		background-color: black;
 		border: none;
 	}
@@ -72,26 +80,20 @@ $(document).ready(function() {
 		border: black 3px solid;
 	}
 	div.fc-content{
-		overflow: visible;
-		white-space: normal;
 		padding: 5px;
 		text-align: center;
 	}
 	div.fc-content span.fc-time{
-		overflow: visible;
-		white-space: normal;
 		display: block;
 		font-weight: normal;
 		font-size: 8pt;
 	}
 
 	div.fc-content span.fc-title{
-		overflow: visible;
-		white-space: normal;
-		margin-top: 10px;
+		/*margin-top: 5px;*/
 		display: block;
 		font-weight: bold;
-		font-size: 12pt;
+		font-size: 11pt;
 	}		
 }
 </style>
