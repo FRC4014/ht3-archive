@@ -19,6 +19,8 @@ function technicians_special($the_content) {
 	
 	
 function add_calendar_scripts() {
+	if (stripos($_SERVER[REQUEST_URI], "calendar") === false)
+		return;
 	?>
 	<link href='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.css' rel='stylesheet' />
 	<link href='/wp-content/plugins/ht3-special/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
