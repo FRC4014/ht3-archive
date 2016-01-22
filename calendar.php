@@ -31,7 +31,11 @@ $(document).ready(function() {
 		},
 		displayEventEnd: true,
 		timeFormat: 'h:mma',
-		eventColor: 'black'
+		eventColor: 'black',
+		eventRender: function(event, element) {
+			 element.addClass("fc-" + event.title.replace(/\s+/g, "_"));
+		
+		}
 	});
 });
 
@@ -93,18 +97,28 @@ div.fc-content span.fc-title{
 .fc td.fc-today.fc-state-highlight{
 	background: lightgrey;
 }
+.fc-Bag_Day{
+	background: #e60000 !important;
+}
 
 @media screen and (max-width: 850px) { /*mobile-specific rules*/
 	span.fc-time{
 		display: none !important;
 	}
 }
-@media screen and (max-width: 700px) { /*desktop-specific rules*/
+@media screen and (max-width: 700px) { /*very small device rules*/
 	div.fc-content span.fc-title{
 		font-size: 9pt;
 	}
 }
+@media screen and (max-width: 500px) { /*very very small device rules*/
+	#mobilewarning {
+		display: block !important;
+		font-style: italic;
+	}
+}
 </style>
 
-<div id='loading'>loading...</div>
-<div id='calendar'></div>
+<div id="loading">loading...</div>
+<div id="calendar"></div>
+<div id="mobilewarning" style="display: none;">you might find more sucess by tilting your device on its side.</div>
