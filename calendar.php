@@ -41,7 +41,9 @@ $(document).ready(function() {
 
 </script>
 <style>
-	
+/* the fullcalendar DOM is a mess; it's a million nested tables with a million 
+    classes and *ghasp* inline styles.  good luck, you'll need it. */
+
 #loading {
 	display: none;
 	position: absolute;
@@ -118,10 +120,12 @@ div.fc-content span.fc-title{
 	#mobilewarning {
 		display: block !important;
 		font-style: italic;
+                text-align: center;
+                margin-top: 10px;
 	}
 }
 </style>
 
 <div id="loading">loading...</div>
 <div id="calendar"></div>
-<div id="mobilewarning" style="display: none;">you might find more success by tilting your device on its side.</div>
+<div id="mobilewarning" style="display: none;">eek.  you might want to tilt your device.</div>
