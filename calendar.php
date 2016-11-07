@@ -57,6 +57,9 @@ span.fc-time, span.fc-title, div.fc-content{
 	overflow: visible;
 	white-space: normal;
 }
+div.fc-day-grid-container.fc-scroller{
+    height: auto !important; /* hack to stop content from overflowing the calender box */
+}
 #calendar {
 	max-width: 900px;
 	margin: 0 auto;
@@ -121,4 +124,4 @@ div.fc-content span.fc-title{
 
 <div id="loading">loading...</div>
 <div id="calendar"></div>
-<div id="mobilewarning" style="display: none;">you might find more sucess by tilting your device on its side.</div>
+<div id="mobilewarning" style="display: none;">you might find more success by tilting your device on its side.</div>
