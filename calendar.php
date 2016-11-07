@@ -62,6 +62,9 @@ span.fc-time, span.fc-title, div.fc-content{
 div.fc-day-grid-container.fc-scroller{
     height: auto !important; /* hack to stop content from overflowing the calender box */
 }
+div.fc-row.fc-week {
+    min-height: 125px !important; /* fix so there aren't any weeks that are shorter in height */
+}
 #calendar {
 	max-width: 900px;
 	margin: 0 auto;
